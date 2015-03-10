@@ -12,7 +12,7 @@ class ButtonTest extends FlatSpec with Matchers with PropertyChecks {
   "The button" should "be ON after pressing it" in {
     val button = new Button
     button.press()
-    button.isOn shouldBe true
+    button.isOn should equal (true)
   }
 
 
